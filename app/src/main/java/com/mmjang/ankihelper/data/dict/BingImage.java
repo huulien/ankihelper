@@ -30,7 +30,7 @@ public class BingImage implements IDictionary {
 
     private static final String AUDIO_TAG = "MP3";
     private static final String DICT_NAME = "必应图片搜索";
-    private static final String DICT_INTRO = "图片保存至 collection.media/ankihelper_image/";
+    private static final String DICT_INTRO = "图片保存至 collection.media/";
     private static final String[] EXP_ELE = new String[] {"单词", "图片"};
 
     private static final String wordUrl = "https://cn.bing.com/images/search?q=";
@@ -73,7 +73,7 @@ public class BingImage implements IDictionary {
                 }
                 HashMap<String, String> eleMap = new HashMap<>();
                 eleMap.put(EXP_ELE[0], key);
-                eleMap.put(EXP_ELE[1], String.format("<img src='%s' class='ankihelper_image'/>",
+                eleMap.put(EXP_ELE[1], String.format("<img src='%s' class='ankihelper_image'/>.",
                         Constant.IMAGE_SUB_DIRECTORY + File.separator + fileName));
                 definitionList.add(new Definition(eleMap, "", url, fileName, "", ""));
             }

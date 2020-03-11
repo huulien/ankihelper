@@ -46,12 +46,12 @@ public class Constant {
     public static final String UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 " +
             "(KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36";
 
-    public static final String IMAGE_SUB_DIRECTORY = "ankihelper_image";
-    public static final String AUDIO_SUB_DIRECTORY = "ankihelper_audio";
+    public static final String IMAGE_SUB_DIRECTORY = "";
+    public static final String AUDIO_SUB_DIRECTORY = "";
 
     public static final String IMAGE_MEDIA_DIRECTORY = Environment.getExternalStorageDirectory()
-            + "/AnkiDroid/collection.media/ankihelper_image/";
+            + "/AnkiDroid/collection.media/";
 
     public static final String AUDIO_MEDIA_DIRECTORY = Environment.getExternalStorageDirectory()
-            + "/AnkiDroid/collection.media/ankihelper_audio/";
+            + "/AnkiDroid/collection.media/";
 }
